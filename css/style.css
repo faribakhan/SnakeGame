@@ -19,45 +19,59 @@
 #board{
     background: linear-gradient(rgb(139, 219, 139), rgb(238, 238, 97));
     width: 90vmin;
-    height: 95vmin;
+    height: 90vmin;
+    margin-top: 2%;
     border: 2px solid black;
     display:grid ;
     grid-template-rows: repeat(18,1fr);
     grid-template-columns: repeat(18,1fr);
 }
+.h1{
+    text-align: center;
+    font-family: 'DynaPuff', cursive;
+    font-weight: bold;
+    color: green;
+
+}
 #scoreBox{
     position: absolute;
-    top: 9px;
-    right: 200px;
+    top: 5%;
+    right: 85%;
     font-size: 50px;
     font-weight: bold;
     font-family: 'DynaPuff', cursive;
 }
 #highScore{
     position: absolute;
-    top: 100px;
-    right: 70px;
+    top: 20%;
+    right: 75%;
     font-size: 50px;
     font-weight: bold;
     font-family: 'DynaPuff', cursive;
 }
 
 .snake{
-    background-color: rgb(66, 4, 117) ;
-    border: .25vmin solid rgb(199, 177, 233);
-    border-radius:  6px;
+    background:linear-gradient(red, purple);
+    margin: .2vmin;
+    border: .25vmin rgb(56, 201, 92) transparent;
+    border-radius:  20%;
 }
 
 .snakeHead{
-    background: blue;
+    background: linear-gradient(rgb(123, 6, 6), red);
     border-radius: 50% 50%;
-    border: 2px solid black;
+    border: .25vmin solid rgb(0, 0, 0);
 
 }
 
 .snakeFood{
-    background: linear-gradient(white, rgb(0, 255, 128));
-    border: .25vmin solid gray;
-    border-radius: 25%;
+    background: linear-gradient( rgba(235, 203, 164, 0.877), brown);
+    border: .6vmin solid rgb(37, 17, 124);
+    border-radius: 10%;
 
+}
+.footer{
+   margin-top:40% ;
+   display: flex;
+   position: relative;
 }
