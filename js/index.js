@@ -10,14 +10,17 @@ let lastPaintTime = 0;
 let snakeArr = [
     {x: 13, y:15}
 ]
+
 food = {x: 6, y: 7};
+
 //Game Functions
 function main(ctime){
     window.requestAnimationFrame(main);
-//   console.log(ctime);
+
     if((ctime - lastPaintTime)/1000 < 1/speed){
         return;
     }
+    
     lastPaintTime = ctime;
     gameEngine();    
 }
